@@ -29,6 +29,12 @@
 	<script src="./effects/halo-rings.js"></script> 
 	<script src="./effects/shader-time.js"></script> 
 
+	<script src="./components/avatar-effect-utils.js"></script> 
+	<!-- glTF Effects --> 
+	<script src="./components/effect-glitch.js"></script> 
+	<script src="./components/effect-glow.js"></script> 
+	<script src="./components/effect-matrix.js"></script> 
+
 </head>
 
 <body>
@@ -72,9 +78,10 @@
 				position="0 -0.33 0.01" class="clickable" navigate-on-click="url: https://iptcyq.github.io"> 
 			</a-text> 
 
-			<a-entity position="0.35 0.2 0.1" rotation="90 0 0"> 
+			<a-entity position="0.40 0.2 0.1" rotation="0 0 0"> 
 				<a-gltf-model id="avatarModel" src="#avatarModel" 
-				position="0 0 0" rotation="0 0 0" scale="0.4 0.4 0.4" ></a-gltf-model> 
+				position="0 0 0" rotation="0 0 0" scale="0.5 0.5 0.5" 
+				effect-glitch="part: Drone; color: #ff3aa3; intensity: 2; glitchRate: 1" ></a-gltf-model> 
 			</a-entity> 
 
 		</a-entity>
